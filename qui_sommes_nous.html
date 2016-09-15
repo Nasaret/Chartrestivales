@@ -9,7 +9,7 @@
 
   </head>
 
-  <body>
+  <body style="background-color:purple">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -20,7 +20,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">ChartESTIVALES</a>
+          <a class="navbar-brand" href="accueil.html">ChartESTIVALES</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -30,9 +30,6 @@
             <li><a href="qui_sommes_nous.html">Qui sommes-nous?</a></li>
             <li><a href="livre_d_or.html">Livre d'or</a></li>
           </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
         </div>
       </div>
     </nav>
@@ -63,7 +60,7 @@
         <div class="item">
           <img src="images/slide_02.jpg">
           <div class="carousel-caption">
-            <a href="phototeque.html" style="color:white;text-decoration:none;">La photothèque</a>
+            <a href="phototheque.html" style="color:white;text-decoration:none;">La photothèque</a>
           </div>
         </div>
 
@@ -73,7 +70,6 @@
             <a href="qui_sommes_nous.html" style="color:white;text-decoration:none;">Qui somme-nous ?</a>
           </div>
         </div>
-
       </div>
 
       <!-- Controls -->
@@ -88,6 +84,8 @@
     </div>
     <!-- End: CAROUSEL -->
 
+    <br/>
+    <p style="color: white">L'association ChartrESTIVALES a été crée en 2007, Association loi 1901, elle a repris le flambeau de l'Office de Tourisme de Chartres et a permis de péréniser les soirées estivales qui sont organisées à Chartres depuis 1992</p>
 
 <!-- FORMULAIRE-->
 
@@ -96,25 +94,29 @@
       <br><br>
       <h2>Qui sommes-nous?</h2>
       </div>
-        <p>Contactez-nous!!</p>
+        <p style="color: white">Contactez-nous!!</p>
           <form>
-  <div class="form-prenom">
-    <label for="prenom" style="color: white">Prénom</label>
-    <input type="prenom" class="form-control" id="prenom" placeholder="Votre prénom">
-  </div>
-  <br/>
-  <div class="form-nom">
-    <label for="nom" style="color: white">Nom</label>
-    <input type="nom" class="form-control" id="nom" placeholder="votre nom">
-  </div>
-  <br/>
-  <label for="message" style="color: white">Votre message</label>
-  <textarea class="form-control" rows="3"></textarea>
-    <br/>
-  <button type="envoie" class="btn btn-default">Envoyer</button>
-</form>
-
+            <div class="form-prenom">
+              <label for="prenom" style="color:white">Prénom</label>
+              <input type="prenom" style="width:25%" class="form-control" id="prenom" placeholder="Prénom">
+            </div>
+            <br/>
+            <div class="form-nom">
+              <label for="nom" style="color: white">Nom</label>
+              <input type="nom" style="width:25%" class="form-control" id="nom" placeholder="Nom">
+            </div>
+            <br/>
+            <label for="message" style="color: white">Votre message</label>
+            <textarea class="form-control" rows="3"></textarea>
+              <br/>
+            <button type="envoie" class="btn btn-default">Envoyer</button>
+          </form>
       </div>
+      <br/>
+      <a href="presse.html" style="color: white;margin-left:10px">Voici un lien dans lequel la presse parle de nous</a>
+
+      <br/>
+      <br/>
       
        <!-- Begin: FOOTER -->
 
@@ -122,13 +124,15 @@
       <div class="row">
 
         <div id="footer">
+        <div class="col-xs-2 col-sm-2">
           <img src="images/twitter.png" height="25">
           <img src="images/facebook.png" height="25">
-          <img src="images/s1.png" height="50">
-          <img src="images/s2.jpg" height="50">
-          <img src="images/s3.jpg" height="50">
-          <img src="images/s4.jpg" height="50">
-          <img src="images/s5.jpg" height="50">
+        </div>
+          <img src="images/s1.png" height="50" class="col-xs-2 col-sm-2">
+          <img src="images/s2.jpg" height="50" class="col-xs-2 col-sm-2">
+          <img src="images/s3.jpg" height="50" class="col-xs-2 col-sm-2">
+          <img src="images/s4.jpg" height="50" class="col-xs-2 col-sm-2">
+          <img src="images/s5.jpg" height="50" class="col-xs-2 col-sm-2">
         </div>
 
       </div>
