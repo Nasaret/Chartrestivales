@@ -2,14 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>ChartrEstivales - Accueil</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <title>ChartrEstivales - Livre d'or</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css"><!-- Bootstrap -->
     <link rel="stylesheet" href="css/styles.css">
 
   </head>
 
-  <body style="background-color:yellow">
+  <body style="background-color:rgb(255,195,0)">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -40,11 +41,11 @@
 
       <!-- Indicators -->
       <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="0"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
         <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4" class="active"></li>
       </ol>
 
       <!-- Wrapper for slides -->
@@ -52,46 +53,57 @@
 
       <!--slide ACCUEIL-->
 
-      <div class="item active">
-          <img src="images/slide_05.jpg">
+      <div class="item">
+          <img src="images/slide1.jpg">
           <div class="carousel-caption">
-            <a href="Accueil.html" style="color:white;text-decoration:none;">l'accueil</a>
+          <h1>Bienvenue :D</h1>
+          <p style="font-size:20px">La saison 2016 de ChartrEstivales est términée<br/>
+          Rendez vous l'année prochaine</p>
+          <p><a class="btn btn-lg btn-primary" href="accueil.html" role="button">Accueil</a></p>
           </div>
         </div>
 
       <!--slide PROGRAMME-->
 
-        <div class="item active">
-          <img src="images/slide_01.jpg">
+        <div class="item">
+          <img src="images/slide2.jpg">
           <div class="carousel-caption">
-            <a href="programme.html" style="color:white;text-decoration:none;">Le programme</a>
+          <h1>Demandez le programme</h1>
+          <p style="font-size:20px">Consultez les dates de concerts, spectacles et manifestations</p>
+          <p><a class="btn btn-lg btn-primary" href="programme.html" role="button">Plus d'infos</a></p>
           </div>
         </div>
 
          <!--slide Phototheque-->
 
         <div class="item">
-          <img src="images/slide_02.jpg">
+          <img src="images/slide3.jpg">
           <div class="carousel-caption">
-            <a href="phototheque.html" style="color:white;text-decoration:none;">La photothèque</a>
+          <h1>Notre photothèque</h1>
+          <p style="font-size:20px">Revivez en images les meilleurs momenst des soirées ChartrEstivales</p>
+          <p><a class="btn btn-lg btn-primary" href="phototheque.html" role="button">Voir les photos</a></p>
           </div>
         </div>
 
         <!--slide Qui sommes nous?-->
 
         <div class="item">
-          <img src="images/slide_03.jpg">
+          <img src="images/slide4.jpg">
           <div class="carousel-caption">
-            <a href="qui_sommes_nous.html" style="color:white;text-decoration:none;">Qui somme-nous ?</a>
+          <h1>Qui sommes nous ?</h1>
+          <p style="font-size:20px">Découvrez notre association et contatez-nous!</p>
+          <p><a class="btn btn-lg btn-primary" href="qui_sommes_nous.html" role="button">Notre association</a></p>
           </div>
         </div>
 
                  <!--slide LIVRE D'OR-->
                  
-        <div class="item">
-          <img src="images/slide_04.jpg">
+        <div class="item active">
+          <img src="images/slide5.jpg">
           <div class="carousel-caption">
-            <a href="livre_d_or.html" style="color:white;text-decoration:none;">Le livre d'or</a>
+          <h1>Venez signer notre livre d'or</h1>
+          <p style="font-size:20px">Partagez votre avis et vos commentaires</p>
+          <p><a class="btn btn-lg btn-primary" href="livre_d_or.html" role="button">Le livre d'or</a></p>
           </div>
         </div>
 
@@ -110,16 +122,127 @@
     <!-- End: CAROUSEL -->
 
 <br/>
+<br/>
 
 <!--contenu -->
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin-right:10px !important; margin-left:10px !important;">
       <div class="row">
-      <br><br>
-      <h2>Livre d'or</h2>
+      <h2 style="color:black">Livre d'or</h2>
       </div>
-      </div>
+      
 
- <!-- Begin: FOOTER -->
+      <!--Formulaire-->
+
+       <div class="row"> 
+      <form>
+            <div class="form-prenom">
+              <label for="prenom" style="color:black">Prénom</label>
+              <input type="prenom" style="width:25%" class="form-control" id="prenom" placeholder="Prénom">
+            </div>
+            <br/>
+            <div class="form-nom">
+              <label for="nom" style="color: black">Nom</label>
+              <input type="nom" style="width:25%" class="form-control" id="nom" placeholder="Nom">
+            </div>
+            <br/>
+            <label for="message" style="color: black">Laissez-nous votre impression sur les Estivales !</label>
+            <textarea class="form-control" rows="3"></textarea>
+              <br/>
+            <button type="envoie" class="btn btn-default">Envoyer</button>
+          </form>
+          </div>
+
+          <!--la partie des com-->
+          <div class="row">
+            <h2 style="color:black">Les commentaires</h2>
+            <p style="font-size: 20px; color:black">Consultez notre livre d'or</p>*
+          </div>
+
+            <div class="row" style="background-color:white">
+            <div class="col-xs-12 col-sm-12">
+              <div class="thumbnail text-center">
+                <div class="part1" style="background-color:white">
+                  <div class="post1" style="background-color:black; color:white">
+                    <p>Posté par <strong>Mathieu Panda dit "le velu"</strong>, le 20/07/2016</p>
+                  </div>
+                  <div class="comment1" style="background-color:white; color:black; padding-top:5px">
+                    <p>Ololz les ptizamis c'était vraiment kro bi1 lé aistivale!! La muzik étaient taupe grasse a Magik sistem ki font bougé bougé</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <br/>
+
+
+            <div class="row" style="background-color:white">
+            <div class="col-xs-12 col-sm-12">
+              <div class="thumbnail text-center">
+                <div class="part2" style="background-color:white">
+                  <div class="post2" style="background-color:black; color:white">
+                    <p>Posté par <strong>l'énigme de la porte</strong>, le 12/07/2016</p>
+                  </div>
+                  <div class="comment2" style="background-color:white; color:black">
+                    <p>Jamais je ne suis loin de mon autre jumelle ,On m'associe souvent au parfum vomitif D'une partie du corps qui n'est pas vraiment belle ,Localisée fort loin de l'organe olfactif, qui suis-je ?</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <br/>
+
+
+            <div class="row" style="background-color:white">
+            <div class="col-xs-12 col-sm-12">
+              <div class="thumbnail text-center">
+                 <div class="post3" style="background-color:black; color:white">
+                    <p>Posté par <strong>Jules Winnfield</strong>, le 23/05/2016</p>
+                  </div>
+                  <div class="comment3" style="background-color:white; color:black">
+                    <p>La marche des vertueux est semée d’obstacles qui sont les entreprises égoïstes que fait sans fin, surgir l’œuvre du malin. Béni soit-il l’homme de bonne volonté qui, au nom de la charité se fait le berger des faibles qu’il guide dans la vallée d’ombre de la mort et des larmes, car il est le gardien de son frère et la providence des enfants égarés. J’abattrai alors le bras d’une terrible colère, d’une vengeance furieuse et effrayante sur les hordes impies qui pourchassent et réduisent à néant les brebis de Dieu. Et tu connaîtras pourquoi mon nom est l’éternel quand sur toi, s’abattra la vengeance du Tout-Puissant !</p>
+                  </div>
+                </div>
+                </div>
+                </div>
+              </div>
+            <br/>
+
+
+            <div class="row" style="background-color:white">
+            <div class="col-xs-12 col-sm-12">
+              <div class="thumbnail text-center">
+                <div class="part4" style="background-color:white">
+                  <div class="post4" style="background-color:black; color:white">
+                    <p>Posté par <strong>Cave Johnson</strong>, le 10/05/2016</p>
+                  </div>
+                  <div class="comment4" style="background-color:white; color:black">
+                    <p>Bon, j'ai pas mal réfléchi. Quand la vie vous fait trébucher, ça ne suffit pas de se relever. Il faut lui péter les rotules, à cette grognasse ! Œil pour œil, dent pour dent ! Essaie un peu de te relever, maintenant, traînée ! Je vous jure, la vie regrettera le jour où elle a osé faire trébucher Cave Johnson ! Tu sais qui je suis ? Je suis le grand méchant loup qui va faire tomber ta maison ! Je vais ordonner à mes ingénieurs de monter des rotules sur ta maison pour pouvoir les lui péter !</p>
+                  </div>
+                </div>               
+              </div>
+            </div>
+            </div>
+            <br/>
+
+
+            <div class="row" style="background-color:white">
+            <div class="col-xs-12 col-sm-12">
+              <div class="thumbnail text-center">
+                <div class="part4" style="background-color:white">
+                  <div class="post4" style="background-color:black; color:white">
+                    <p>Posté par <strong>Voie off chiante</strong>, le 02/05/2016</p>
+                  </div>
+                  <div class="comment4" style="background-color:white; color:black">
+                    <p>You must gather your party before venturing forth</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <br/>
+</div>
+
+             <!-- Begin: FOOTER -->
 
     <div class="container-fluid">
       <div class="row">
